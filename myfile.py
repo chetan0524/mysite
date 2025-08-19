@@ -1,4 +1,3 @@
-a = 300
-b = 200
-sum = (a+b)
-print(sum)
+str ="apple"
+print(str[-3:-5])
+
