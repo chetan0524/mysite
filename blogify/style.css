@@ -1,15 +1,17 @@
-:root { --primary:#655DFF; --bg:#f6f7fb; --text:#1f2937; --muted:#6b7280; }
-*{box-sizing:border-box} body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:var(--text)}
-.topbar{height:56px;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 20px;border-bottom:1px solid #eee}
-.brand{font-weight:700}
-.card{max-width:700px;margin:32px auto;background:#fff;border:1px solid #eee;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,.1);padding:20px}
-.title-input,.content-input{width:100%;padding:10px;margin:8px 0;border:1px solid #ddd;border-radius:8px;font-size:16px}
-.content-input{resize:vertical}
-.actions{display:flex;justify-content:flex-end;gap:10px;margin-top:12px}
-.btn{padding:10px 16px;border:none;border-radius:8px;cursor:pointer}
-.btn-primary{background:var(--primary);color:#fff}
-.btn-light{background:#eef2ff;color:#3730a3}
-.btn-primary:hover{filter:brightness(.95)} .btn-light:hover{filter:brightness(.97)}
-.post-title{font-size:28px}
-.meta{color:var(--muted);margin-bottom:10px}
-.post-content{font-size:18px;line-height:1.6;white-space:pre-wrap}
+@import "tailwindcss";
+body {
+  font-family: "Inter", sans-serif;
+}
+/* Simple transition for the mobile menu */
+.nav-links {
+  transition: max-height 0.3s ease-out;
+}
+#editor {
+  outline: none;
+  min-height: 400px;
+}
+/* Style for the active button in the toolbar */
+.toolbar-button.active {
+  background-color: #e0e7ff; /* indigo-100 */
+  color: #4f46e5; /* indigo-700 */
+}
