@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Post • Blogify</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="create.js" defer></script>
+</head>
+<body>
+  <nav class="topbar">
+    <div class="brand">✳ Blogify</div>
+    <a class="btn btn-light" href="create.html">Create New Post</a>
+  </nav>
+
+  <main class="card">
+    <h1>Your Post Title…</h1>
+
+    <input id="title" class="title-input" type="text"
+           placeholder="Enter your post title..." />
+
+    <textarea id="content" class="content-input" rows="12"
+              placeholder="Start writing your amazing blog post here..."></textarea>
+
+    <div class="actions">
+      <button id="save" class="btn btn-light" type="button">Save Draft</button>
+      <button id="publish" class="btn btn-primary" type="button">Publish Post</button>
+    </div>
+  </main>
+
+  <script src="create.js" defer></script>
+</body>
+</html>
